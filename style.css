@@ -1,0 +1,149 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.table-container {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  background-color: #2b2b2b;
+}
+
+.table-container table {
+  background-color: #2f2f2f;
+  padding: 20px 0;
+  border-collapse: collapse;
+  max-height: 80%;
+  position: relative;
+}
+
+.table-container thead th {
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  position: sticky;
+  text-align: left;
+  top: 0;
+  padding: 16px 10px;
+  background-color: #2f2f2f;
+}
+
+.table-container th {
+  cursor: pointer;
+}
+
+.table-container td, .table-container th {
+  text-align: left;
+  padding: 16px 10px;
+  font-size: 1.2em;
+  vertical-align: top;
+  border-right: solid 2px #2b2b2b;
+  border-left: solid 2px #2b2b2b;
+}
+
+.table-container tr {
+  border: none;
+}
+
+.table-container tbody tr:nth-child(odd){
+  background-color: #333333;
+}
+
+.table-container tbody td:last-child {
+  text-align: center;
+}
+
+
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-left: 2px;
+  width: 100px;
+  cursor: pointer;
+  /*box-shadow: 0 0 0px;*/
+
+}
+
+.splash .get-data-button:hover {
+  background: #5a78b9;
+}
+
+.splash .get-data-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2b2b2b;
+
+}
+.splash .splash-text{
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.splash .get-data-button{
+  height: 60px;
+  font-size: 22px;
+  width: 200px;
+  background: #597fd9;
+  transition: all 0.2s ease;
+  color: #fff;
+  -webkit-user-select: none;
+}
+
+.table-container .clear-button {
+  height: 40px;
+  width: 137px;
+  font-size: 16px;
+  background: #cb5132;
+  color: #fff;
+  -webkit-user-select: none;
+  margin: 40px 0;
+}
+
+.table-container .clear-button:hover {
+  background: #c74021;
+}
+
+.table-container .clear-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+.table-container table tbody tr td span{
+  -webkit-user-select: none;
+
+}
+
+.table-container table tbody tr td span:hover{
+  cursor: pointer;
+}
+
+.loader {
+  font-size: 1.4em;
+  margin: 20px 0;
+}
